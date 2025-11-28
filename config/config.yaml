@@ -1,0 +1,16 @@
+seed: 42
+
+paths:
+  data_path: "data/sample_ads.csv"
+  output_dir: "reports"
+  logs_dir: "logs"
+
+thresholds:
+  low_confidence: 0.6
+  roas_drop_pct: 0.05        # 5% drop threshold
+  ctr_drop_pct: 0.03         # 3% drop threshold
+  creative_roas_delta_pct: 0.20
+  audience_roas_diff_pct: 0.25
+
+runtime:
+  sample_mode: true   # use small sample dataset by default

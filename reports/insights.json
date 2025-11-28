@@ -1,0 +1,62 @@
+{
+  "hypotheses": [
+    {
+      "id": "H1",
+      "reason": "Recent ROAS decline detected.",
+      "evidence": {
+        "roas_before": 2.5400074855866572,
+        "roas_after": 2.3652319362638847,
+        "delta": -0.1747755493227725
+      },
+      "confidence": 0.85
+    },
+    {
+      "id": "H2",
+      "reason": "CTR decline suggests possible creative fatigue.",
+      "evidence": {
+        "ctr_before": 2.939922133202846,
+        "ctr_after": 2.5811581649817743,
+        "delta": -0.3587639682210715
+      },
+      "confidence": 0.82
+    },
+    {
+      "id": "H_creative_Video",
+      "reason": "Creative type 'Video' underperforms.",
+      "evidence": {
+        "ctr": 3.0242811351751584,
+        "roas": 1.8874735764338815
+      },
+      "confidence": 0.75
+    },
+    {
+      "id": "H_creative_Image",
+      "reason": "Creative type 'Image' underperforms.",
+      "evidence": {
+        "ctr": 2.6770158120596492,
+        "roas": 1.9967181170226485
+      },
+      "confidence": 0.75
+    },
+    {
+      "id": "H_creative_UGC",
+      "reason": "Creative type 'UGC' underperforms.",
+      "evidence": {
+        "ctr": 2.700889539774636,
+        "roas": 2.7624573178152807
+      },
+      "confidence": 0.75
+    },
+    {
+      "id": "H_audience",
+      "reason": "Audience ROAS varies significantly.",
+      "evidence": {
+        "worst_audience": "Women 25-45",
+        "worst_roas": 2.1421800187170494,
+        "best_audience": "Women 18-35",
+        "best_roas": 2.209164671218727
+      },
+      "confidence": 0.79
+    }
+  ]
+}

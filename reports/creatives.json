@@ -1,0 +1,79 @@
+{
+  "creative_recommendations": [
+    {
+      "campaign_name": "Campaign C",
+      "current_theme": "comfort, softness",
+      "issues_detected": [
+        "No urgency or promotional hook"
+      ],
+      "new_headlines": [
+        "Feel Comfort All Day \u2014 Designed for Daily Wear",
+        "Your New Everyday Essential: Soft, Premium, Breathable",
+        "Comfort Meets Style \u2014 Try the Upgrade",
+        "Experience Softness Like Never Before"
+      ],
+      "new_messages": [
+        "Discover all-day softness with breathable, high-quality fabric.",
+        "Made for movement \u2014 perfect comfort from morning to night.",
+        "Engineered for everyday wear with premium materials.",
+        "Feel confident and comfortable in every moment."
+      ],
+      "new_ctas": [
+        "Shop Now",
+        "Try It Today",
+        "Feel the Comfort",
+        "Limited Offer \u2014 Buy Now"
+      ]
+    },
+    {
+      "campaign_name": "Campaign B",
+      "current_theme": "comfort, premium quality, softness",
+      "issues_detected": [
+        "No urgency or promotional hook"
+      ],
+      "new_headlines": [
+        "Feel Comfort All Day \u2014 Designed for Daily Wear",
+        "Your New Everyday Essential: Soft, Premium, Breathable",
+        "Comfort Meets Style \u2014 Try the Upgrade",
+        "Experience Softness Like Never Before"
+      ],
+      "new_messages": [
+        "Discover all-day softness with breathable, high-quality fabric.",
+        "Made for movement \u2014 perfect comfort from morning to night.",
+        "Engineered for everyday wear with premium materials.",
+        "Feel confident and comfortable in every moment."
+      ],
+      "new_ctas": [
+        "Shop Now",
+        "Try It Today",
+        "Feel the Comfort",
+        "Limited Offer \u2014 Buy Now"
+      ]
+    },
+    {
+      "campaign_name": "Campaign A",
+      "current_theme": "comfort, premium quality, softness",
+      "issues_detected": [
+        "No urgency or promotional hook"
+      ],
+      "new_headlines": [
+        "Feel Comfort All Day \u2014 Designed for Daily Wear",
+        "Your New Everyday Essential: Soft, Premium, Breathable",
+        "Comfort Meets Style \u2014 Try the Upgrade",
+        "Experience Softness Like Never Before"
+      ],
+      "new_messages": [
+        "Discover all-day softness with breathable, high-quality fabric.",
+        "Made for movement \u2014 perfect comfort from morning to night.",
+        "Engineered for everyday wear with premium materials.",
+        "Feel confident and comfortable in every moment."
+      ],
+      "new_ctas": [
+        "Shop Now",
+        "Try It Today",
+        "Feel the Comfort",
+        "Limited Offer \u2014 Buy Now"
+      ]
+    }
+  ]
+}
