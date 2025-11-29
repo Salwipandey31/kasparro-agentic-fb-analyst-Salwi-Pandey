@@ -1,58 +1,80 @@
-# Kasparro Agentic Facebook Performance Analyst  
-### By: Salwi Pandey
+# Kasparro — Agentic Facebook Performance Analyst  
+By: Salwi Pandey
 
-This repository implements a full **Agentic Multi-Agent System** designed for the **Kasparro Applied AI Engineer Assignment**.  
-The system diagnoses **Facebook Ads performance**, analyzes trends, validates hypotheses, and generates **creative recommendations**.
+This repository implements a complete **Agentic Multi-Agent System** designed for the **Kasparro Applied AI Engineer Assignment**.  
+The system autonomously analyzes Facebook Ads performance, explains ROAS/CTR changes, validates hypotheses, and proposes data-driven creative improvements.
 
 ---
 
 # 🚀 Quick Start
 
-## 1️⃣ Install all dependencies
+## 1️⃣ Python Environment
 ```bash
+python -V  # should be >= 3.10
+python -m venv .venv && source .venv/bin/activate  
+# Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 
-2️⃣ Run the full agentic pipeline
-This command runs:
-Planner Agent
-Data Agent
-Insight Agent
-Evaluator Agent
-Creative Generator
-Final Report Builder
+2️⃣ Run the Full Multi-Agent Pipeline
 make run
 
-Generated outputs:
-reports/final_report.json
-reports/insights.json
-reports/creatives.json
-logs/run_log.json
-make test
+📂 Data Configuration
+Using full dataset
 
+Place CSV in any folder and set:
+export DATA_CSV="/path/to/synthetic_fb_ads_undergarments.csv"
+Using sample dataset (default)
+
+The repo includes:
+data/sample_ads.csv
+
+Additional documentation:
+data/README.md
+
+⚙️ Config (config/config.yaml)
+
+Edit thresholds, seeds, paths, runtime mode:
+
+python: "3.10"
+seed: 42
+
+paths:
+  data_path: "data/sample_ads.csv"
+  output_dir: "reports"
+  logs_dir: "logs"
+
+thresholds:
+  confidence_min: 0.6
+  roas_drop_pct: 0.05
+  ctr_drop_pct: 0.03
+  creative_roas_delta_pct: 0.20
+  audience_roas_diff_pct: 0.25
+
+runtime:
+  use_sample_data: true
+
+🧠 Agentic Architecture
 User Query
-     │
-     ▼
+   │
+   ▼
 Planner Agent
-     │  Decomposes tasks
-     ▼
+   │ breaks tasks
+   ▼
 Data Agent
-     │  Loads + validates + summarizes data
-     ▼
+   │ loads + summarizes
+   ▼
 Insight Agent
-     │  Generates hypotheses with evidence
-     ▼
+   │ generates hypotheses
+   ▼
 Evaluator Agent
-     │  Validates hypotheses (threshold-based)
-     ▼
+   │ validates hypotheses
+   ▼
 Creative Generator Agent
-     │  Generates new creative directions
-     ▼
-Final Report Builder
+   │ generates new creatives
+   ▼
+Final Report
 
-
-📁 Repository Structure
-kasparro-agentic-fb-analyst-yourname/
-│
+📁 Repository Map
 ├── README.md
 ├── Makefile
 ├── requirements.txt
@@ -93,77 +115,44 @@ kasparro-agentic-fb-analyst-yourname/
 │   └── run_log.json
 │
 ├── reports/
-│   ├── final_report.json
 │   ├── insights.json
-│   └── creatives.json
+│   ├── creatives.json
+│   └── final_report.json
 │
 └── tests/
     └── test_evaluator.py
 
-⚙️ Configuration (config.yaml)
-config/config.yaml
+🧪 Testing
+
+Run evaluator tests:
+make test
+Ensures:
+evaluator runs
+threshold logic works
+output schema matches expected format
+
+📊 Outputs
+
+Generated after running pipeline:
+reports/final_report.json     – Full multi-agent output
+reports/insights.json         – Hypotheses + reasoning
+reports/creatives.json        – Creative recommendations
+logs/run_log.json             – Execution evidence
+
+📦 Release
+Version tag used for submission:
+v1.0
+
+🧵 Self-Review PR
+
+A Pull Request titled:
+self-review
+
 Includes:
-seed value
-data paths
-report/log paths
-thresholds for performance drops
-sample mode switch
-
-🧩 Agent Details
-🟦 Planner Agent
-Decomposes user query into tasks
-Defines input/output schemas
-Provides retry logic and confidence levels
-
-🟩 Data Agent
-Loads dataset
-Validates columns
-Summaries by day, campaign, creative type, audience
-Identifies low-CTR and low-ROAS segments
-
-🟨 Insight Agent
-Detects performance patterns
-Generates hypotheses: CTR drop, ROAS drop, audience differences, creative fatigue
-Provides evidence + confidence
-
-🟧 Evaluator Agent
-Applies threshold-based quantitative validation
-Marks hypotheses as Supported or Rejected
-Generates confidence scores
-
-🟪 Creative Generator Agent
-Analyzes low-CTR campaigns
-Extracts themes from creative_message
-Detects issues
-
-Generates:
-Headlines
-Primary text
-CTAs
-
-📊 Example Output Snippet (final_report.json)
-{
-  "insights": {
-    "hypotheses": [
-      {
-        "id": "H1",
-        "reason": "Recent ROAS decline detected.",
-        "confidence": 0.85
-      }
-    ]
-  },
-  "creative_recommendations": [
-    {
-      "campaign_name": "Campaign A",
-      "new_headlines": [
-        "Feel Comfort All Day — Designed for Daily Wear"
-      ]
-    }
-  ]
-}
-
+design choices
+reasoning architecture
+rubric mapping
+tradeoffs
 
 🙌 Author
-
-Salwi Pandey
-Kasparro Applied AI Engineer Assignment
+Salwi Pandey Kasparro Applied AI Engineer Assignment ```
