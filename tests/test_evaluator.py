@@ -6,7 +6,7 @@ from src.agents.evaluator_agent import evaluator_agent
 
 def test_evaluator_runs():
     """Basic test to ensure evaluator runs correctly."""
-    
+
     hypotheses = {
         "hypotheses": [
             {

@@ -3,7 +3,7 @@ import pandas as pd
 
 def make_json_safe(obj):
     """Recursively convert pandas/numpy objects into JSON-safe types."""
-    
+
     # Basic Python types are fine
     if isinstance(obj, (str, int, float, bool)) or obj is None:
         return obj
